@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>org.intellij.prisma</id>
+    <name>Prisma ORM</name>
+    <vendor>JetBrains</vendor>
+    <description><![CDATA[
+    Support for <a href="https://www.prisma.io">Prisma</a> ORM.
+
+    <h3>Features</h3>
+
+    <ul>
+      <li>Prisma Schema Language grammar support</li>
+      <li>Semantic syntax highlighting</li>
+      <li>Code completion</li>
+      <li>Documentation</li>
+      <li>Line commenter</li>
+      <li>Reader mode for comments with Markdown support</li>
+      <li>Braces and quotes automatic insertion</li>
+      <li>Rename refactoring</li>
+      <li>Structure view</li>
+      <li>Folding</li>
+      <li>LSP support</li>
+      <li>Improved completion and resolve for generated Prisma client</li>
+    </ul>
+    ]]></description>
+
+    <depends>com.intellij.modules.ultimate</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <platform.lsp.serverSupportProvider implementation="com.lsp.HTMXLspServerSupportProvider"/>
+    </extensions>
+</idea-plugin>
